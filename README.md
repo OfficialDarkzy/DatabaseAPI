@@ -11,12 +11,12 @@
 
 ## Installation
 1. Find a folder location somewhere you want to install the database api.
-2. Open up CMD prompt.
+2. Open up command prompt.
 3. Get the folder location you made previously. ^ Refer to step one's location ^
-4. In the CMD prompt type "cd [paste the folder location here]". ^ You should see the folder location change on the CMD prompt.
-5. In the CMD prompt type "git clone https://github.com/xander1998/DatabaseAPI.git"
-6. In the CMD prompt type "cd DatabaseAPI".
-7. Once that is done installing make sure you have NPM installed and type in the CMD prompt "npm install"
+4. In the command prompt type "cd [paste the folder location here]". ^ You should see the folder location change on the command prompt.
+5. In the command prompt type "git clone https://github.com/xander1998/DatabaseAPI.git"
+6. In the command prompt type "cd DatabaseAPI".
+7. Once that is done installing make sure you have NPM installed and type in the command prompt "npm install"
 
 ## IMPORTANT
 Find the config.js file and setup your database server port.
