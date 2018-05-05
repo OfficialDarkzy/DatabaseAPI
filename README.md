@@ -22,8 +22,3 @@
 Find the config.js file and setup your database server port.
 
 MAKE SURE THAT YOU CHANGE THE SECRET. THAT IS THE PASSWORD FOR YOU DATABASE API AUTH TOKEN!!!!
-
-ExternalConfig.API = {
-    route: "/external/api",
-    secret: "yoursecretkey" // CHANGE THIS ONE RIGHT HERE
-}
