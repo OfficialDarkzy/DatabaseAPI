@@ -22,3 +22,7 @@
 Find the config.js file and setup your database server port.
 
 MAKE SURE THAT YOU CHANGE THE SECRET. THAT IS THE PASSWORD FOR YOU DATABASE API AUTH TOKEN!!!!
+
+## How  to start the server
+1. Make sure you cd into the DatabaseAPI folder in the command prompt.
+2. type "node server" and the server will launch
