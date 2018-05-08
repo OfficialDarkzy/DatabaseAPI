@@ -26,3 +26,9 @@ MAKE SURE THAT YOU CHANGE THE SECRET. THAT IS THE PASSWORD FOR YOU DATABASE API 
 ## How  to start the server
 1. Make sure you cd into the DatabaseAPI folder in the command prompt.
 2. type "node server" and the server will launch
+
+## FiveM Server
+
+If you are using this for a FiveM server. Take the externalsql out of
+https://github.com/xander1998/DatabaseAPI/tree/master/%5BFiveM%20Resource%5D
+and start and put it in your resources folder then modify the config.lua
