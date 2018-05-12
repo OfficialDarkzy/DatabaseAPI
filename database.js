@@ -17,3 +17,5 @@ function DatabaseConnection() {
 }
 
 module.exports = DatabaseConnection();
+
+console.log("[DatabaseAPI Message] : Loaded 'database.js'");

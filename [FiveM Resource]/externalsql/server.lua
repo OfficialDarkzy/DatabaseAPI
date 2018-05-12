@@ -23,7 +23,6 @@ function onExternalSqlReady(callback)
     end)
 end
 
-
 function DBAsyncQuery(queryData, callback)
     Citizen.CreateThread(function()
         if authToken ~= nil then
@@ -33,8 +32,7 @@ function DBAsyncQuery(queryData, callback)
                 if decode.status ~= false then
                     callback({status = true, data = decode.results})
                 else
-                    print(tostring("Error Name: " .. decode.message.name))
-                    print(tostring("Error Message: " .. decode.message.message))
+                    print(text)
                     callback({status = false, data = {}})
                 end
 

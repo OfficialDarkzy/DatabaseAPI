@@ -2,6 +2,7 @@ const db = require("./database");
 const jwt = require("jsonwebtoken");
 const config = require("./config").api;
 
+
 db.config.queryFormat = function (query, values) {
     if (!values) return query;
     return query.replace(/\:(\w+)/g, function (txt, key) {
@@ -31,7 +32,7 @@ module.exports = (app) => {
             if (error) {
                 res.json({status: false, message: error, results: ""});
             } else {
-                db.query(req.body.query, req.body.queryData, (error, results, fields) => {
+                db.query(req.body.query, req.body.data, (error, results, fields) => {
                     if (error) {
                         res.json({status: false, message: error, results: "[]"});
                     } else {
@@ -64,3 +65,5 @@ function CheckSecretKey(key, secret) {
         return true
     }
 }
+
+console.log("[DatabaseAPI Message] : Loaded 'routes.js'");
