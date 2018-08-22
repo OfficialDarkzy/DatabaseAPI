@@ -8,10 +8,19 @@ function DatabaseConnection() {
         db = mysql.createConnection(config);
         db.connect( (error) => {
             if (error) {
-                throw error;
+                console.log(`Error when connecting to the sql db: ${error}`);
+                setTimeout(DatabaseConnection, 2000);
             }
             console.log("MySQL Connection Created");
-        })
+        });
+
+        db.on("error", (error) => {
+            if (error.code == "PROTOCOL_CONNECTION_LOST") {
+                DatabaseConnection();
+            } else {
+                throw error;
+            }
+        });
     }
     return db
 }
